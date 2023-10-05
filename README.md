@@ -7,6 +7,6 @@ You can delete "to-do"s:
 Light Theme:
 ![Light Theme](./white.png)
 It is Responsive:
-![Responsive](./phone.png)
+![Responsive](./phone.png)      
 The web kit I used for this project was: Next.JS, React, TypeScript and CSS.
-The main goal of this project is to practice my React skills with TypeScript
+The main goal of this project is to practice my React skills with TypeScript & localStorage
