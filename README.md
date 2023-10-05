@@ -1,5 +1,5 @@
 ## TO-DO-LIST_APP
-A responsive Next.JS app which allows people to save their "to-do" tasks in localStorage, with the ability to remove some of them by clicking the "x", refresh everything and change theme. This is my first ever Node.js app with TypeScript, I did a few projects with JSX but this was the first time doing it with TSX. I took a little inspiration from the previous Meme Generator project I did with React & Vite which I did during the 14 hour course on React from Scrimba.com   
+A responsive Next.JS app which allows people to save their "to-do" tasks in localStorage, with the ability to remove some of them by clicking the "x", refresh everything and change theme. This is my first ever Node.js app with TypeScript, I did a few projects with JSX but this was the first time doing it with TSX. I took a little inspiration from the previous Meme Generator project I did with React & Vite which I've done during the 14 hour Scrimba.com course.   
 Some photos of the website:
 ![Dark Theme](./first.png)
 You can delete "to-do"s:
