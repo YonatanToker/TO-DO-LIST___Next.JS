@@ -1,0 +1,190 @@
+/* Made By Yonatan Toker */
+.header {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  background-color: var(--bg-darker);
+  margin: 0;
+  padding-block: 0.4em;
+  align-items: center;
+  user-select: none;
+  margin-bottom: 1em;
+  position: relative;
+}
+.toDoImage {
+  height: 100%;
+  max-width: 100px;
+  width: 100%;
+  margin-left: 1em;
+}
+.headerTitle {
+  font-size: 3em;
+  margin-inline: auto;
+}
+.mainHeader > .headerTitle {
+  display: none;
+}
+.headerRefresh {
+  padding: 0.3em;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-size: 2em;
+  cursor: pointer;
+  margin-right: 0.5em;
+}
+.headerRefresh:hover {
+  transform: scale(1.1) translateY(-5%);
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+.themeToggle {
+  position: absolute;
+  left: 2em;
+  bottom: -2em;
+  padding: 0;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--bg-darker);
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+}
+.slider {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 20px;
+  height: 90%;
+  border-radius: 50%;
+  background-color: var(--text-light);
+  transition: all 0.3s;
+}
+.themeToggle.on .slider {
+  left: 57%;
+}
+.inputsButtonContainer {
+  display: grid;
+  padding: 1em;
+  grid-template: 70px 70px / 1fr 1fr;
+  gap: 1em;
+}
+.inputF {
+  border: none;
+  color: var(--text-light);
+  background-color: var(--bg-darker);
+  padding: 0.3em 0 0.3em 0.5em;
+  font-size: 1.4em;
+  border-radius: 5px;
+}
+.createToDoBtn {
+  grid-column: 1 / -1;
+  background-color: var(--bg-darker);
+  border: none;
+  border-radius: 5px;
+  color: var(--text-lessDark);
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.createToDoBtn:hover {
+  transform: scale(1.01);
+  color: var(--text-light);
+}
+.listContainer {
+  margin-top: 1em;
+  width: 90%;
+  max-width: 60em;
+  border-radius: 10px;
+  background-color: var(--bg-darker);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 1em 1em;
+}
+.listContainerTitle {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+.listTitle {
+  margin: 0;
+  text-decoration: underline;
+}
+
+/* The ul */
+.todoList {
+  width: 100%;
+  padding: 0;
+  list-style: none;
+}
+/* The items */
+.toDoItems {
+  margin-bottom: 0.4em;
+  position: relative;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3em;
+  align-items: center;
+}
+.timeSpan {
+  max-width: 49%;
+}
+.descriptionSpan {
+  max-width: 49%;
+}
+.deleteImg {
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .headerTitle {
+    font-size: 7vw;
+  }
+  .toDoImage {
+    width: 20vw;
+  }
+  .headerRefresh {
+    font-size: 5vw;
+  }
+  .inputsButtonContainer {
+    grid-template: 70px 70px 70px / 1fr;
+  }
+  .inputF,
+  .createToDoBtn {
+    grid-column: 1 / -1;
+  }
+}
+@media screen and (max-width: 440px) {
+  .themeToggle {
+    left: 0.5em;
+  }
+  .headerRefresh {
+    font-size: 1.7em;
+    margin: 0 1em 0 auto;
+  }
+  .header .headerTitle {
+    display: none;
+  }
+  .mainHeader > .headerTitle {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+  }
+  .toDoImage {
+    height: 100%;
+    max-width: 100px;
+    width: 100%;
+    margin-left: 1em;
+  }
+}

@@ -1,0 +1,32 @@
+/* Made By Yonatan Toker */
+:root {
+  --bg-dark: #313131;
+  --bg-light: #eaeaea;
+  --bg-darker: #131313;
+  --text-dark: #000000;
+  --text-lessDark: rgb(139, 134, 134);
+  --text-light: #ffffff;
+}
+
+[data-theme="light"] {
+  --bg-dark: #eaeaea;
+  --bg-light: #f7f7f7;
+  --bg-darker: #d4d4d4;
+  --text-dark: #131313;
+  --text-lessDark: #6c6c6c;
+  --text-light: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace, sans-serif;
+}
