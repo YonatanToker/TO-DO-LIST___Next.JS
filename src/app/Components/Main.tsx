@@ -91,6 +91,10 @@ export default function Main(): React.JSX.Element {
         </div>
         {renderingAllToDoItems()}
       </div>
+      <div className={styles.AbigailContainer}>
+        <h1>Abigail's container</h1>
+        <img className={styles.kapibarara} src="/kapibara.jpg" alt="kapibara" />
+      </div>
     </main>
   );
 }
