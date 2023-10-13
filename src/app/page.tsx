@@ -6,10 +6,11 @@ import { ToDoContext } from "./createContext";
 import { TimeTaskType } from "./types";
 import Main from "./Components/Main";
 export default function Home() {
-  const [todos, setTodos] = useState<TimeTaskType[]>(
-    JSON.parse(localStorage.getItem("todos") || "[]")
-  );
-
+  const [todos, setTodos] = useState<TimeTaskType[]>([]);
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem("todos") || "[]");
+    setTodos(items);
+  }, []);
   const handleRefresh = () => {
     setTodos((prevTodos) => []);
     localStorage.setItem("todos", "[]");
